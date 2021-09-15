@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Flask Usage</title>
+<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/index.css') }}" />
+
+</head>
+
+<body>
+  <p>Hello World</p>
+  <script>
+      var myData = {{ data.data|tojson|safe }};
+      console.log(myData);
+  </script>
+
+</body>
+
+</html>
+ 
